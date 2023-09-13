@@ -1,14 +1,21 @@
 {
   "name": "htmx-i18n",
-  "module": "index.ts",
+  "module": "src/index.tsx",
   "type": "module",
+  "scripts": {
+    "dev": "bun --hot run src/index.tsx"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.6.5",
+    "@elysiajs/static": "^0.6.0",
+    "elysia": "^0.6.23"
+  },
   "devDependencies": {
-    "bun-types": "latest"
+    "@kitajs/html": "^2.1.2",
+    "bun-types": "latest",
+    "typed-html": "^3.0.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "elysia": "^0.6.23"
   }
 }
